@@ -27,8 +27,9 @@ dependencies {
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
-    // This dependency is used by the application.
-    implementation(libs.guava)
+    implementation(libs.netty.all)
+    implementation(libs.agrona)
+    implementation(libs.coroutines)
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

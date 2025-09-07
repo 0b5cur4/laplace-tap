@@ -2,12 +2,14 @@
 # https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
 
 [versions]
-guava = "33.4.6-jre"
 junit-jupiter-engine = "5.12.1"
-
+netty = "4.2.5.Final"
+agrona = "2.3.0-rc1"
+coroutines = "1.10.2"
 [libraries]
-guava = { module = "com.google.guava:guava", version.ref = "guava" }
 junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-jupiter-engine" }
-
+netty-all = { module = "io.netty:netty-all", version.ref = "netty" }
+agrona = { module = "org.agrona:agrona", version.ref = "agrona"}
+coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines"}
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.2.0" }
